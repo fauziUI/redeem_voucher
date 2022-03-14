@@ -91,22 +91,22 @@ const MakanKaryawan = () => {
 
       <div className="mx-auto max-w-md px-2 lg:max-w-2xl">
         {voucher === 0 ? (
-          <div className="mb-4 flex rounded-lg bg-red-100 p-2 text-sm text-red-700">
+          <div className="mb-4 flex rounded-lg bg-red-100 p-2 sm:text-xs text-sm text-red-700">
             <div className="flex h-8 w-8 flex-col items-center justify-center">
               <IconAlert />
             </div>
             <div className="flex items-center justify-center">
-              <span className="mx-2 sm:text-sm font-medium">Voucher Habis !</span>
+              <span className="mx-2 font-medium">Voucher Habis !</span>
               Tunggu Bulan Depan yaa...
             </div>
           </div>
         ) : (
-          <div className="flex rounded-lg bg-green-100 p-2 text-sm text-green-700">
+          <div className="flex rounded-lg bg-green-100 p-2 sm:text-xs text-sm text-green-700">
             <div className="flex h-8 w-8 flex-col items-center justify-center">
               <IconAlert />
             </div>
             <div className="flex items-center justify-center">
-              <span className="mx-2 sm:text-sm font-medium">
+              <span className="mx-2 font-medium">
                 Masih Tersedia {voucher} Voucher !
               </span>
               Yeah.. bisa makan gratis
