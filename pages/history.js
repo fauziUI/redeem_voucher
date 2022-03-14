@@ -115,13 +115,6 @@ const MakanKaryawan = () => {
 
       <div className="mx-auto w-5/6">
         <div className="container m-4 mx-auto flex w-full max-w-md flex-col items-center justify-center lg:max-w-3xl ">
-          {namaQuery ? (
-            <>
-              <img src={QR} alt="import"></img>
-              <div className="pb-6">Tunjukan QR ini saat redeem voucher</div>
-            </>
-          ) : null}
-
           <ul className="flex w-full flex-col divide-y">
             {history.map((e, i) => (
               <li key={Math.random()} className="flex flex-row ">
@@ -130,18 +123,18 @@ const MakanKaryawan = () => {
                     <IconDompet />
                   </div>
                   <div className="mr-16 flex-1">
-                    <div className="font-medium dark:text-white">
+                    <div className="font-medium">
                       Redeem {i + 1}
                     </div>
-                    <div className="text-sm text-gray-600 dark:text-gray-200">
+                    <div className="text-sm ">
                       {e.nama}
                     </div>
                   </div>
                   <div className="pr-4">
-                    <div className="text-sm font-medium dark:text-white">
+                    <div className="text-sm ">
                       {moment(e.tanggal_redeem).format("ll")}
                     </div>
-                    <div className="text-sm text-gray-600 dark:text-gray-200">
+                    <div className="text-sm ">
                       {e.jam_redeem}
                     </div>
                   </div>
