@@ -122,15 +122,15 @@ const MakanKaryawan = () => {
                   <div className="mr-4 flex h-10 w-10 flex-col items-center justify-center">
                     <IconDompet />
                   </div>
-                  <div className="mr-16 flex-1">
-                    <div className="text-sm">
+                  <div className="mr-14 flex-1">
+                    <div className="text-sm font-semibold">
                       Redeem {i + 1}
                     </div>
                     <div className="text-sm ">
                       {e.nama}
                     </div>
                   </div>
-                  <div className="pr-4">
+                  <div className="">
                     <div className="text-sm ">
                       {moment(e.tanggal_redeem).format("ll")}
                     </div>
