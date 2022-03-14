@@ -211,7 +211,7 @@ const MakanKaryawan = () => {
 
             <button
               onClick={() => handleSubmit()}
-              className="disabled mx-auto mt-8 block rounded bg-blue-700 px-28 py-2 text-white shadow-md hover:bg-blue-800"
+              className="disabled mx-auto mt-8 block rounded bg-blue-700 sm:px-20 px-28 py-2 text-white shadow-md hover:bg-blue-800"
             >
               Redeem Voucher
             </button>
