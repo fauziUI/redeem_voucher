@@ -114,11 +114,11 @@ const MakanKaryawan = () => {
       </div>
 
       <div className="mx-auto w-5/6">
-        <div className="container m-4 mx-auto flex w-full max-w-md flex-col items-center justify-center lg:max-w-3xl ">
+        <div className="container mx-auto flex w-full max-w-md flex-col items-center justify-center lg:max-w-3xl ">
           <ul className="flex w-full flex-col divide-y">
             {history.map((e, i) => (
               <li key={Math.random()} className="flex flex-row ">
-                <div className="flex  flex-1 select-none items-center p-2 hover:bg-gray-50">
+                <div className="flex  flex-1 select-none items-center hover:bg-gray-50">
                   <div className="mr-4 flex h-10 w-10 flex-col items-center justify-center">
                     <IconDompet />
                   </div>
