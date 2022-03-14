@@ -96,7 +96,7 @@ const MakanKaryawan = () => {
               <IconAlert />
             </div>
             <div className="flex items-center justify-center">
-              <span className="mx-2 font-medium">Voucher Habis !</span>
+              <span className="mx-2 sm:text-sm font-medium">Voucher Habis !</span>
               Tunggu Bulan Depan yaa...
             </div>
           </div>
@@ -106,7 +106,7 @@ const MakanKaryawan = () => {
               <IconAlert />
             </div>
             <div className="flex items-center justify-center">
-              <span className="mx-2 font-medium">
+              <span className="mx-2 sm:text-sm font-medium">
                 Masih Tersedia {voucher} Voucher !
               </span>
               Yeah.. bisa makan gratis
