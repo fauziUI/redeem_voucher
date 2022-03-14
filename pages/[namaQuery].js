@@ -92,24 +92,24 @@ const MakanKaryawan = () => {
       <div className="mx-auto max-w-md px-2 lg:max-w-2xl">
         {voucher === 0 ? (
           <div className="mb-4 flex rounded-lg bg-red-100 p-2 text-sm text-red-700">
-            <div className="flex h-8 w-8 flex-col items-center justify-center">
+            <div className="mx-2 flex h-8 w-8 flex-col items-center justify-center">
               <IconAlert />
             </div>
-            <div className="flex items-center justify-center">
-              <span className="mx-2 font-medium">Voucher Habis !</span>
-              Tunggu Bulan Depan yaa...
+            <div className="mx-2 flex flex-col lg:items-center lg:flex-row">
+              <div className="font-medium mr-2">Voucher Habis !</div>
+              <div className="">Tunggu Bulan Depan yaa...</div>
             </div>
           </div>
         ) : (
           <div className="flex rounded-lg bg-green-100 p-2 text-sm text-green-700">
-            <div className="flex h-8 w-8 flex-col items-center justify-center">
+            <div className="mx-2 flex h-8 w-8 flex-col items-center justify-center">
               <IconAlert />
             </div>
-            <div className="flex items-center justify-center">
-              <span className="mx-2 font-medium">
+            <div className="mx-2 flex flex-col lg:items-center lg:flex-row ">
+              <div className="font-medium mr-2">
                 Masih Tersedia {voucher} Voucher !
-              </span>
-              Yeah.. bisa makan gratis
+              </div>
+              <div className="">Yeah.. bisa makan gratis</div>
             </div>
           </div>
         )}
@@ -132,20 +132,14 @@ const MakanKaryawan = () => {
                     <IconDompet />
                   </div>
                   <div className="mr-16 flex-1">
-                    <div className="font-medium">
-                      Redeem {i + 1}
-                    </div>
-                    <div className="text-sm">
-                      {nama}
-                    </div>
+                    <div className="font-medium">Redeem {i + 1}</div>
+                    <div className="text-sm">{nama}</div>
                   </div>
                   <div className="pr-4">
                     <div className="text-sm font-medium">
                       {moment(e.tanggal_redeem).format("ll")}
                     </div>
-                    <div className="text-sm">
-                      {e.jam_redeem}
-                    </div>
+                    <div className="text-sm">{e.jam_redeem}</div>
                   </div>
                 </div>
               </li>
