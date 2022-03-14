@@ -123,7 +123,7 @@ const MakanKaryawan = () => {
                     <IconDompet />
                   </div>
                   <div className="mr-16 flex-1">
-                    <div className="font-medium">
+                    <div className="text-sm">
                       Redeem {i + 1}
                     </div>
                     <div className="text-sm ">
