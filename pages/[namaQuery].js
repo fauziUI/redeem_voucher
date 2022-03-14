@@ -132,18 +132,18 @@ const MakanKaryawan = () => {
                     <IconDompet />
                   </div>
                   <div className="mr-16 flex-1">
-                    <div className="font-medium dark:text-white">
+                    <div className="font-medium">
                       Redeem {i + 1}
                     </div>
-                    <div className="text-sm text-gray-600 dark:text-gray-200">
+                    <div className="text-sm">
                       {nama}
                     </div>
                   </div>
                   <div className="pr-4">
-                    <div className="text-sm font-medium dark:text-white">
+                    <div className="text-sm font-medium">
                       {moment(e.tanggal_redeem).format("ll")}
                     </div>
-                    <div className="text-sm text-gray-600 dark:text-gray-200">
+                    <div className="text-sm">
                       {e.jam_redeem}
                     </div>
                   </div>
