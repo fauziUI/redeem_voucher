@@ -15,6 +15,7 @@ import moment from "moment";
 import { useRouter } from "next/router";
 import { API_URL } from "../constants/API";
 import QRCode from "qrcode";
+import Logo_Roastkuy from "../public/Logo_Roastkuy.png";
 
 const MakanKaryawan = () => {
   const [seePass, setSeePass] = useState(false);
@@ -119,6 +120,7 @@ const MakanKaryawan = () => {
         <div className="container m-4 mx-auto flex w-full max-w-md flex-col items-center justify-center lg:max-w-3xl ">
           {namaQuery ? (
             <>
+              <img className="object-scale-down h-14" src={"../Logo_Roastkuy.png"} alt="import"></img>
               <img src={QR} alt="import"></img>
               <div className="pb-6">Tunjukan QR ini saat redeem voucher</div>
             </>
