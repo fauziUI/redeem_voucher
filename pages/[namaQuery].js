@@ -43,7 +43,7 @@ const MakanKaryawan = () => {
       setDepartemen(result.data[0].departemen);
       setVoucher(result.data[0].sisa_voucher);
 
-      QRCode.toDataURL(`https://voucher.roastkuy.com/fauzi`).then(setQR);
+      QRCode.toDataURL(`https://voucher.roastkuy.com/${namaQuery}`).then(setQR);
 
       const redeem = await axios(
         `${API_URL}/redeem_voucher/get?id_karyawan=${result.data[0].id_karyawan}`
